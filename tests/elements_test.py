@@ -11,7 +11,7 @@ class TestElements():
             text_box_page.open()
             full_name, email, current_address, permanent_address = text_box_page.fill_all_fields()
             out_name, out_email, out_current_address, out_permanent_address = text_box_page.check_filled_form()
-            assert full_name == out_name, "Names don't match"
-            assert email == out_email, "Emails don't match"
-            assert current_address == out_current_address, "Current addresses don't match"
-            assert permanent_address == out_permanent_address, "Permanent addresses don't match"
+            assert full_name == out_name, "Names doesn't match"
+            assert email == out_email, "Emails doesn't match"
+            assert current_address == out_current_address, "Current addresses doesn't match"
+            assert permanent_address == out_permanent_address, "Permanent addresses doesn't match"
