@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class TextBoxLocators:
+class TextBoxPageLocators:
 
     # from fields
 
@@ -19,5 +19,9 @@ class TextBoxLocators:
     CREATED_PERMANENT_ADDRESS = (By.CSS_SELECTOR, "#output #permanentAddress")
 
 
-
+class CheckBoxPageLocators:
+    EXPAND_ALL_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Expand all']")
+    COLLAPSE_ALL_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Collapse all']")
+    ITEM_LIST = (By.CSS_SELECTOR, "span[class='rct-title']")
+    CHECKED_ITEMS = (By.CSS_SELECTOR, "svg[class='rct-icon rct-icon-check'")
 

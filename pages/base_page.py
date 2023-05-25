@@ -27,3 +27,7 @@ class BasePage:
 
     def go_to_element(self, element):
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
+
+    def scroll_down(self, scrollvаlue):
+        scroll_by = f'window.scrollBy(0, {scrollvаlue});'
+        self.driver.execute_script(scroll_by)
